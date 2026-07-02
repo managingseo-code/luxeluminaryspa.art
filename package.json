@@ -1,0 +1,10 @@
+{
+  "name": "luxe-luminary-spa",
+  "version": "1.0.0",
+  "description": "Luxe Luminary Spa - Google Ads Landing Page",
+  "scripts": {
+    "dev": "npx serve@latest -l 3000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "npx serve@latest -l 3000"
+  }
+}
