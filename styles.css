@@ -150,14 +150,15 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.6rem); }
 }
 
 .btn-outline {
-    background: transparent;
-    color: var(--color-charcoal);
-    border-color: var(--color-charcoal);
+    background: var(--color-black);
+    color: var(--color-white);
+    border-color: var(--color-black);
 }
 
 .btn-outline:hover {
     background: var(--color-charcoal);
     color: var(--color-white);
+    border-color: var(--color-charcoal);
     transform: translateY(-2px);
 }
 
@@ -210,7 +211,7 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.6rem); }
 }
 
 .nav-logo img {
-    height: 40px;
+    height: 55px;
     width: auto;
 }
 
@@ -1065,7 +1066,7 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.6rem); }
     }
 
     .nav-logo img {
-        height: 32px;
+        height: 42px;
     }
 
     .hero {
