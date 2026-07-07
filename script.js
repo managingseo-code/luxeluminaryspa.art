@@ -1,4 +1,22 @@
+function openBooking(e) {
+    e.preventDefault();
+    document.getElementById('bookingModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeBooking() {
+    document.getElementById('bookingModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
 document.addEventListener('DOMContentLoaded', function () {
+
+    var modal = document.getElementById('bookingModal');
+    modal.querySelector('.booking-modal-overlay').addEventListener('click', closeBooking);
+    modal.querySelector('.booking-modal-close').addEventListener('click', closeBooking);
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeBooking();
+    });
 
     // Navbar scroll effect
     var navbar = document.getElementById('navbar');

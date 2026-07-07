@@ -989,6 +989,81 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.6rem); }
 }
 
 /* ========================================
+   BOOKING MODAL
+   ======================================== */
+.booking-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+.booking-modal.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+.booking-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+.booking-modal-content {
+    position: relative;
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 16px;
+    max-width: 800px;
+    width: 95%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
+    animation: modalSlideUp 0.3s ease;
+}
+.booking-modal-content .embedded-widget-title {
+    flex-shrink: 0;
+}
+.booking-modal-content .vagaro {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+}
+.booking-modal-content .vagaro iframe {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 60vh;
+}
+@keyframes modalSlideUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.booking-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #666;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: background var(--transition), color var(--transition);
+}
+.booking-modal-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* ========================================
    FOOTER
    ======================================== */
 .footer {

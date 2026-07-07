@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Luxe Luminary Spa</title>
+    <meta name="description" content="Your booking is confirmed. We look forward to welcoming you at Luxe Luminary Spa in Downtown Los Angeles.">
+    <link rel="icon" type="image/png" href="images/logo-white.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --color-cream: #FAF8F5;
+            --color-charcoal: #2D2D2D;
+            --color-gold: #C9A96E;
+            --color-gold-dark: #B8963E;
+            --color-white: #FFFFFF;
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-cream);
+            color: var(--color-charcoal);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .thank-you-card {
+            background: var(--color-white);
+            border-radius: 16px;
+            padding: 60px 48px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--color-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+        }
+
+        .checkmark svg {
+            width: 40px;
+            height: 40px;
+            stroke: white;
+            stroke-width: 3;
+            fill: none;
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--color-charcoal);
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 36px;
+        }
+
+        .details {
+            background: var(--color-cream);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 36px;
+            text-align: left;
+        }
+
+        .details h3 {
+            font-family: var(--font-heading);
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: var(--color-charcoal);
+        }
+
+        .details p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .details a {
+            color: var(--color-gold-dark);
+            text-decoration: none;
+        }
+
+        .details a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--color-charcoal);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover {
+            background: #444;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--color-charcoal);
+            border: 2px solid var(--color-charcoal);
+            margin-left: 12px;
+        }
+
+        .btn-outline:hover {
+            background: var(--color-charcoal);
+            color: var(--color-white);
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-note {
+            margin-top: 32px;
+            font-size: 13px;
+            color: #999;
+        }
+
+        @media (max-width: 480px) {
+            .thank-you-card { padding: 40px 24px; }
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 16px; }
+            .actions { flex-direction: column; }
+            .btn-outline { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thank-you-card">
+        <div class="checkmark">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+
+        <h1>Thank You!</h1>
+        <p class="subtitle">Your booking has been confirmed. We can't wait to welcome you at Luxe Luminary Spa.</p>
+
+        <div class="details">
+            <h3>What to Know Before Your Visit</h3>
+            <p>
+                &#10148; Please arrive <strong>5–10 minutes early</strong> to check in and settle in<br>
+                &#10148; Complimentary refreshments will be waiting for you<br>
+                &#10148; Wear comfortable clothing — we'll take care of the rest<br>
+                &#10148; Questions? Call us at <a href="tel:+12139399998">(213) 939-9998</a>
+            </p>
+        </div>
+
+        <div class="details">
+            <h3>Find Us</h3>
+            <p>
+                1119 1/2 South Hope Street<br>
+                Los Angeles, CA 90015<br>
+                Open Daily 9:00 AM – 9:30 PM<br>
+                <a href="https://maps.google.com/?q=Luxe+Luminary+Spa,1119+S+Hope+St,Los+Angeles,CA+90015" target="_blank" rel="noopener">Get Directions →</a>
+            </p>
+        </div>
+
+        <div class="actions">
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+            <a href="tel:+12139399998" class="btn btn-outline">Call Us</a>
+        </div>
+
+        <p class="footer-note">A confirmation will be sent to your email from Vagaro.</p>
+    </div>
+
+</body>
+</html>
