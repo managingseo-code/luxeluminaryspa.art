@@ -1034,7 +1034,8 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.6rem); }
 .booking-modal-content .vagaro {
     flex: 1;
     min-height: 0;
-    overflow: hidden;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .booking-modal-content .vagaro iframe {
     width: 100% !important;
